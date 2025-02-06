@@ -1,0 +1,125 @@
+/*? Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/*? Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .landing .intro-text {
+    margin-bottom: 10em;
+  }
+  .landing h1 {
+    font-size: 60px;
+  }
+  .landing p {
+    font-size: 19px;
+  }
+  .features .container .feat i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .title + p {
+    margin: -25px 0 0;
+  }
+  .portfolio .portfolio-content {
+    row-gap: 2em;
+    column-gap: 2em;
+  }
+  .contact .contact-main > p:first-of-type,
+  a {
+    font-size: 1.75rem;
+  }
+}
+
+/*? Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .landing .intro-text {
+    margin-bottom: 4em;
+  }
+  .features .container .feat i {
+    font-size: 3rem;
+  }
+  .title {
+    font-size: 6.25rem;
+  }
+  .title + p {
+    margin: -32px 0 0;
+  }
+  .services .services-content {
+    column-gap: 2em;
+  }
+  .services .services-content .srv {
+    flex-direction: row;
+    text-align: left;
+    gap: 2em;
+  }
+  .services .services-content .image {
+    display: block;
+  }
+  .portfolio .portfolio-content .project .text {
+    text-align: left;
+  }
+  .about {
+    padding-bottom: 110px;
+  }
+  .about .about-content {
+    flex-direction: row;
+    align-items: start;
+  }
+  .about .about-content .image::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    z-index: -1;
+  }
+  .about .about-content .image::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    top: -50px;
+    right: -150px;
+  }
+  .about .about-content .text {
+    text-align: left;
+    padding-left: 10em;
+  }
+  .about .about-content .text hr {
+    margin-left: 0;
+    margin-right: auto;
+    width: 300px;
+  }
+  .contact {
+    padding-block: 100px;
+  }
+  .contact .contact-main > p:first-of-type,
+  a {
+    font-size: 2.1875rem;
+  }
+}
+
+/*? X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*? XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
